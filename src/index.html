@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" data-ng-app="app">
+<head>
+  <meta charset="utf-8" />
+  <title>Be Angular | Bootstrap Admin Web App with AngularJS</title>
+  <meta name="description" content="app, web app, responsive, responsive layout, admin, admin panel, admin dashboard, flat, flat ui, ui kit, AngularJS, ui route, charts, widgets, components" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <link rel="stylesheet" href="styles/bootstrap.css" type="text/css" />
+  <link rel="stylesheet" href="styles/animate.css" type="text/css" />
+  <link rel="stylesheet" href="styles/font-awesome.min.css" type="text/css" />
+  <link rel="stylesheet" href="styles/simple-line-icons.css" type="text/css" />
+  <link rel="stylesheet" href="styles/font.css" type="text/css" />
+  <link rel="stylesheet" href="styles/app.css" type="text/css" />
+</head>
+<body ng-controller="AppCtrl">
+  <div class="app" id="app" ng-class="{'app-header-fixed':app.settings.headerFixed, 'app-aside-fixed':app.settings.asideFixed, 'app-aside-folded':app.settings.asideFolded, 'app-aside-dock':app.settings.asideDock, 'container':app.settings.container}" ui-view></div>
+  <!-- jQuery -->
+  <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+
+  <!-- Angular -->
+  <script src="/node_modules/angular/angular.min.js"></script>
+  <script src="/node_modules/angular-animate/angular-animate.min.js"></script>
+  <script src="/node_modules/angular-cookies/angular-cookies.min.js"></script>
+  <script src="/node_modules/angular-resource/angular-resource.min.js"></script>
+  <script src="/node_modules/angular-sanitize/angular-sanitize.min.js"></script>
+  <script src="/node_modules/angular-touch/angular-touch.min.js"></script>
+
+  <!-- Vendor -->
+  <script src="/node_modules/angular-ui-router/release/angular-ui-router.min.js"></script>
+  <script src="/node_modules/ngstorage/ngStorage.min.js"></script>
+
+  <!-- bootstrap -->
+  <script src="/node_modules/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+
+  <!-- lazyload -->
+  <script src="/node_modules/oclazyload/dist/ocLazyLoad.min.js"></script>
+
+  <!-- translate -->
+  <script src="/node_modules/angular-translate/dist/angular-translate.min.js"></script>
+  <script src="/node_modules/angular-translate/dist/angular-translate-loader-static-files/angular-translate-loader-static-files.min.js"></script>
+  <script src="/node_modules/angular-translate/dist/angular-translate-storage-cookie/angular-translate-storage-cookie.min.js"></script>
+  <script src="/node_modules/angular-translate/dist/angular-translate-storage-local/angular-translate-storage-local.min.js"></script>
+
+  <!-- App -->
+  <script src="scripts/app.js"></script>
+  <script src="scripts/config.js"></script>
+  <script src="scripts/config.lazyload.js"></script>
+  <script src="scripts/config.router.js"></script>
+  <script src="scripts/main.js"></script>
+  <script src="services/ui-load.js"></script>
+  <script src="filters/fromNow.js"></script>
+  <script src="directives/setnganimate.js"></script>
+  <script src="directives/ui-butterbar.js"></script>
+  <script src="directives/ui-focus.js"></script>
+  <script src="directives/ui-fullscreen.js"></script>
+  <script src="directives/ui-jq.js"></script>
+  <script src="directives/ui-module.js"></script>
+  <script src="directives/ui-nav.js"></script>
+  <script src="directives/ui-scroll.js"></script>
+  <script src="directives/ui-shift.js"></script>
+  <script src="directives/ui-toggleclass.js"></script>
+  <script src="directives/ui-validate.js"></script>
+  <script src="scripts/controllers/bootstrap.js"></script>
+</body>
+</html>
